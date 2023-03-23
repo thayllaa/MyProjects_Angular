@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   standalone: true,
+  imports: [ CommonModule, FormsModule ],
   selector: 'app-thaylla-random',
   templateUrl: './thaylla-random.component.html',
   styleUrls: ['./thaylla-random.component.css']
