@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -10,18 +10,18 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./thaylla-random.component.css']
 })
 export class ThayllaRandomComponent implements OnInit {
-  num: number = 2;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input() num: number = 2;
+  
   getNumbers() {
     let arr = [];
     for (let i = 1; i <= this.num; i++) {
       arr.push(Math.trunc(100 * Math.random()));
     }
     return arr;
+  }
+
+  constructor() { }
+
+  ngOnInit() {
   }
 }
