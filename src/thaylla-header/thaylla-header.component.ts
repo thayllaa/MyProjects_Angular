@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thaylla-header.component.css']
 })
 export class ThayllaHeaderComponent implements OnInit {
-  name: String = "Thaylla & Projects"
+  name: String = "Thaylla & Projects";
+  
   constructor() { }
 
   ngOnInit() {
