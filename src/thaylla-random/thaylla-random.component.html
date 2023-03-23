@@ -1,13 +1,9 @@
 <h2> Fluxo de Controle </h2>
-<input type="number" [(ngModel)]="n" />
+<input type="number" [(ngModel)]="num" />
 <hr/>
 <table border="1">
-  <tr><th> Number </th><th> Even or Odd </th></tr>
-  <tr *ngFor="let n of getNumbers()">
-    <td> {{ n }} </td>
-    <td>
-      <span *ngIf="n%2==0">Even</span>
-      <span *ngIf="n%2!=0">Odd</span>
-    </td>
+  <tr><th> Random Numbers </th>
+  <tr *ngFor="let num of getNumbers()">
+    <td> {{ num }} </td>
   </tr>
 </table>

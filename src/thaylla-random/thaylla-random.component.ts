@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./thaylla-random.component.css']
 })
 export class ThayllaRandomComponent implements OnInit {
-  n: number = 10;
+  num: number = 10;
 
   constructor() { }
 
@@ -19,7 +19,7 @@ export class ThayllaRandomComponent implements OnInit {
 
   getNumbers() {
     let arr = [];
-    for (let i = 1; i <= this.n; i++) {
+    for (let i = 1; i <= this.num; i++) {
       arr.push(Math.trunc(100 * Math.random()));
     }
     return arr;
