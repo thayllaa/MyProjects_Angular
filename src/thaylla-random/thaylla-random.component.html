@@ -1,9 +1,11 @@
-<h2> Fluxo de Controle </h2>
+<h2>Fluxo de Controle</h2>
 <input type="number" [(ngModel)]="num" />
-<hr/>
+<hr />
 <table border="1">
-  <tr><th> Random Numbers </th>
+  <tr>
+    <th>Random Numbers</th>
+  </tr>
   <tr *ngFor="let num of getNumbers()">
-    <td> {{ num }} </td>
+    <td>{{ num }}</td>
   </tr>
 </table>
