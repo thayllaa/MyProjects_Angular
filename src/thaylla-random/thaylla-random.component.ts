@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./thaylla-random.component.css']
 })
 export class ThayllaRandomComponent implements OnInit {
-  num: number = 10;
+  num: number = 1;
 
   constructor() { }
 
