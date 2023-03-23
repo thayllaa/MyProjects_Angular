@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { ThayllaHeaderComponent } from './thaylla-header/thaylla-header.component';
 import { ThayllaRandomComponent } from './thaylla-random/thaylla-random.component';
+import { ThayllaTimerComponent } from './thaylla-timer/thaylla-timer.component';
 
 @Component({
   selector: 'my-app',
@@ -12,11 +13,10 @@ import { ThayllaRandomComponent } from './thaylla-random/thaylla-random.componen
     CommonModule,
     ThayllaHeaderComponent,
     ThayllaRandomComponent,
+    ThayllaTimerComponent
   ],
   templateUrl: './main.html',
 })
-export class App {
-  name = 'Thaylla & Projects';
-}
+export class App {}
 
 bootstrapApplication(App);
