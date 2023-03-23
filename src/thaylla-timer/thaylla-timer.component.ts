@@ -7,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thaylla-timer.component.css']
 })
 export class ThayllaTimerComponent implements OnInit {
+  counter: number = 0;
 
-  constructor() { }
+  constructor() {
+    const timer = setInterval(() => {
+      this.counter = this.counter + 1;
+    }, 100);
+  }
+
+  getSec() {
+    return Math.trunc(this.counter % 60);
+  }
+
+  getMin() {
+    return Math.trunc(this.counter/60);
+  }
 
   ngOnInit() {
   }
-
 }
