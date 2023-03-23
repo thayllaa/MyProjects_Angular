@@ -12,7 +12,7 @@ export class ThayllaTimerComponent implements OnInit {
   constructor() {
     const timer = setInterval(() => {
       this.counter = this.counter + 1;
-    }, 100);
+    }, 1000);
   }
 
   getSec() {
