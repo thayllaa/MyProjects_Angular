@@ -10,11 +10,11 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./thaylla-random.component.css']
 })
 export class ThayllaRandomComponent implements OnInit {
-  @Input() num: number = 2;
+  @Input() number: number = 2;
   
   getNumbers() {
     let arr = [];
-    for (let i = 1; i <= this.num; i++) {
+    for (let i = 1; i <= this.number; i++) {
       arr.push(Math.trunc(100 * Math.random()));
     }
     return arr;
