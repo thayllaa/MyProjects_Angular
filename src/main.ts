@@ -15,10 +15,10 @@ import { ThayllaTimerComponent } from './thaylla-timer/thaylla-timer.component';
     ThayllaRandomComponent,
     ThayllaTimerComponent,
   ],
-  template: './main.html',
+  templateUrl: './main.html',
 })
 export class App {
-  name = 'Angular';
+  name = 'Thaylla & Projects';
 }
 
 bootstrapApplication(App);
